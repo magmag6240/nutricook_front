@@ -1,0 +1,111 @@
+.main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(253, 247, 242);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.login_title {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    color: rgb(82, 36, 17);
+}
+
+.login_form {
+    margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .login_form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        max-width: 360px;
+    }
+}
+
+.label_email, .label_password, .register_link {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+    color: rgb(82, 36, 17);
+}
+
+.email_group {
+    margin-top: 1rem;
+}
+
+.password_group {
+    margin-top: 1.5rem;
+}
+
+.input_email, .input_password {
+    margin-top: 0.5rem;
+    line-height: 1.3rem;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgb(156, 163, 175);
+    border-radius: 0.375rem;
+    padding: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgba(82, 36, 17);
+}
+@media (min-width: 768px) {
+    .input_email {
+        line-height: 1.5rem;
+    }
+}
+
+.error_email, .error_password {
+    position: relative;
+    background-color: rgba(254, 226, 226);
+    border-color: rgba(248, 113, 113);
+    color: rgba(185, 28, 28);
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    border-radius: 0.25rem;
+}
+
+.button_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.login_button {
+    width: 100%;
+    border-radius: 0.4rem;
+    background-color: rgb(84, 195, 59);
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: rgba(255, 255, 255);
+    border: none;
+}
+@media (min-width: 768px) {
+    .login_button {
+        width: 50%;
+    }
+}
+
+.login_button:hover, .index_logout_button:hover {
+    background-color: rgb(203, 255, 206);
+    color: rgb(32, 99, 39);
+}
+
+.register_link {
+    text-align: center;
+    margin-top: 1.5rem;
+}

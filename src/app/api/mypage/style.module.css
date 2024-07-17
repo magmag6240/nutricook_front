@@ -1,0 +1,36 @@
+.main {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-color: rgb(253, 247, 242);
+}
+
+@media (min-width: 768px) {
+    .main {
+        flex-direction: row;
+        overflow: hidden;
+    }
+}
+
+.sideNav {
+    width: 100%;
+    flex: none;
+}
+
+@media (min-width: 768px) {
+    .sideNav {
+        width: 16rem;
+    }
+}
+
+.children {
+    flex-grow: 1;
+    padding: 1.5rem;
+    padding: 3rem;
+}
+
+@media (min-width: 768px) {
+    .children {
+        overflow-y: auto;
+    }
+}
